@@ -26,10 +26,11 @@ class School
   end
   
   def sort
-    @roster.map {|grade, name|
-    @roster[grade].sort
-    @roster[grade]
-    }
+    new_hash = {}
+    @roster.each do |grade, name|
+      new_hash[grade] ||= []
+      new_hash[grade] = name.sort
+    end
   end
 
 end
