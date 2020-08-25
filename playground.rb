@@ -1,11 +1,30 @@
-roster = {}
+class School
+attr_accessor :roster
 
-def add_student(name, grade)
-  puts roster
-  # if roster == nil
-  #   roster[grade] << []
+  def initialize(roster)
+    @roster = {}
+  end
+
+  def add_student(student, grade)
+    roster[grade] ||= []
+    roster[grade] << student
+  end
+
+  def grade(year)
+    roster[year]
+  end
+
+  def sort
+    roster.each{|grade,names| names.sort!}
+    Hash[roster.sort]
+  end 
+
+  # def sort
+  #   sorted_roster = {}
+  #   self.roster.each do |grade, students|
+  #     sorted_roster[grade] = students.sort
+  #   end
+  #   sorted_roster
   # end
-end
 
-add_student("Alexander", 9)
-    
+end
