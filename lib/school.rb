@@ -8,7 +8,7 @@ class School
   end
 
   def add_student(name, grade)
-    puts @roster
+    puts @roster[name]
 
     # If @roster[grade] == nil
     #   puts "correct"
