@@ -17,7 +17,7 @@ class School
   end
 
   def grade(num)
-    @roster.map.flatten {|grade, names| @roster[grade] if grade == num}
+    @roster[num]
   end
 
 end
