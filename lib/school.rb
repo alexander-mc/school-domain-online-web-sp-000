@@ -30,7 +30,7 @@ class School
     @roster.each do |grade, name|
       roster_sorted[grade] = name.sort
     end
-    puts roster_sorted
+    roster_sorted
   end
 
 end
