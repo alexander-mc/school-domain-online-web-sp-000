@@ -14,14 +14,6 @@ class School
     else
       @roster[grade] << name
     end
-
-    # If @roster[grade] == nil
-    #   puts "correct"
-    #   @roster[grade] = []
-    #   @roster[grade] << name
-    # else
-    #   @roster[grade] << name
-    # end
   end
 
 end
