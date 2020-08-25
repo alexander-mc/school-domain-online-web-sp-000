@@ -7,12 +7,12 @@ class School
     @roster= {}
   end
 
-  def add_student(grade, name)
+  def add_student(name, grade)
     @roster[grade] ||= []       # THIS IS THE DOUBLE PIPE EQUALS...notice the similarities to += and -=
     @roster[grade] << name
   end
 
-  # def add_student(grade, name)
+  # def add_student(name, grade)
   #   if @roster[grade] == nil
   #     @roster[grade] = []
   #     @roster[grade] << name
@@ -36,8 +36,7 @@ class School
 end
 
 eau_gallie = School.new("Eau Gallie H.S.")
-eau_gallie.add_student(9, "Alexander")
-eau_gallie.add_student(10, "Leif")
-eau_gallie.add_student(10, "Brenton")
+eau_gallie.add_student("Alexander", 9)
+eau_gallie.add_student("Leif", 10)
+eau_gallie.add_student("Brenton", 10)
 eau_gallie.sort
-
