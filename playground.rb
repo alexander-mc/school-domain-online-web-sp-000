@@ -1,3 +1,4 @@
 roster = {}
-roster[9] = "Alexander"
+if roster == nil
+  roster[9] = "Alexander"
 puts roster
