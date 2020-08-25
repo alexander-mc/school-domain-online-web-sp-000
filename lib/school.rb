@@ -21,7 +21,7 @@ class School
   end
   
   def sort
-    @roster.map {|grade, name| @roster[grade].sort}
+    @roster.each {|grade, name| @roster[grade].sort}
   end
 
 end
