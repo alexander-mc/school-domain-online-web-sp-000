@@ -17,9 +17,7 @@ class School
   end
 
   def grade(num)
-    @roster.map do |key, val|
-      @roster.values if key == num
-    end
+    @roster.map {|grade, names| @roster[grade] if grade == num}
   end
 
 end
@@ -28,4 +26,4 @@ eau_gallie = School.new("Eau Gallie H.S.")
 eau_gallie.add_student("Alexander", 9)
 eau_gallie.add_student("Brenton", 10)
 eau_gallie.add_student("Leif", 10)
-puts eau_gallie.roster
+puts eau_gallie.grade
