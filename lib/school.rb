@@ -8,7 +8,7 @@ class School
   end
 
   def add_student(name, grade)
-    If @roster[grade] == nil
+    If self.@roster[grade] == nil
       puts "correct"
     #   @roster[grade] = []
     #   @roster[grade] << name
