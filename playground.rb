@@ -1,8 +1,8 @@
-roster = {}
+ROSTER = {}
 
 def add_student(name, grade)
-  puts roster
-  # if roster == nil
+  puts ROSTER
+  # if ROSTER == nil
   #   roster[grade] << []
   # end
 end
