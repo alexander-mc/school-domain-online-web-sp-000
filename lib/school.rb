@@ -12,4 +12,5 @@ class School
 
 end
 
-School.new("Eau Gallie H.S.")
+eau_gallie = School.new("Eau Gallie H.S.")
+puts eau_gallie.roster
