@@ -30,7 +30,7 @@ class School
     @roster.each do |grade, name|
       roster_sorted[grade] = name.sort
     end
-    roster_sorted
+    puts roster_sorted
   end
 
 end
@@ -39,5 +39,5 @@ eau_gallie = School.new("Eau Gallie H.S.")
 eau_gallie.add_student("Alexander", 9)
 eau_gallie.add_student("Leif", 10)
 eau_gallie.add_student("Brenton", 10)
-puts eau_gallie.sort
+eau_gallie.sort
 
