@@ -16,6 +16,10 @@ class School
     end
   end
 
+  def grade(num)
+  
+  end
+
 end
 
 eau_gallie = School.new("Eau Gallie H.S.")
