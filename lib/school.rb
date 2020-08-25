@@ -36,8 +36,8 @@ class School
 end
 
 eau_gallie = School.new("Eau Gallie H.S.")
-eau_gallie.add_student("Alexander", 9)
-eau_gallie.add_student("Leif", 10)
-eau_gallie.add_student("Brenton", 10)
+eau_gallie.add_student(9, "Alexander")
+eau_gallie.add_student(10, "Leif")
+eau_gallie.add_student(11, "Brenton")
 eau_gallie.sort
 
