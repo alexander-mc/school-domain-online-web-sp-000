@@ -8,7 +8,7 @@ class School
   end
 
   def add_student(grade, name)
-    @roster[grade] || @roster[grade] = []       # THIS IS THE DOUBLE PIPE EQUALS 
+    @roster[grade] || = []       # THIS IS THE DOUBLE PIPE EQUALS 
     @roster[grade] << name
   end
 
