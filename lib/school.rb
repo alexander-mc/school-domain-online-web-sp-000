@@ -17,7 +17,9 @@ class School
   end
 
   def grade(num)
-    @roster.values
+    @roster.map do |key, val|
+      @roster.values if key == num
+    end
   end
 
 end
