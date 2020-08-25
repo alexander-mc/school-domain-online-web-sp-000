@@ -8,7 +8,7 @@ class School
   end
 
   def add_student(grade, name)
-    @roster[grade] == 9 ||= []
+    @roster[grade] ||= []
     @roster[grade] << name
   end
 
