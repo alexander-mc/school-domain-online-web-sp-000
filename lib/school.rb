@@ -8,9 +8,18 @@ class School
   end
 
   def add_student(name, grade)
-    
+    If @roster[grade]
+      @roster[grade] = []
+      @roster[grade] << name
+    else
+      @roster[grade] << name
+    end
   end
 
 end
 
-puts School.new("Eau Gallie").roster
+eau_gallie = School.new("Eau Gallie H.S.")
+eau_gallie.add_student("Alexander", 9)
+eau_gallie.add_student("Brenton", 10)
+eau_gallie.add_student("Leif", 10)
+puts eau_gallie.roster
